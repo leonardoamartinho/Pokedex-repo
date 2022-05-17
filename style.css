@@ -1,0 +1,221 @@
+body {
+	background: #faf6f6;
+	color: rgb(74, 74, 75);
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+	cursor: default;
+}
+
+h1:hover {
+	color: rgba(0,0,0,0.5);
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+	transition: all ease-in .1s;
+}
+
+.card::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 43%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: .5;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.steel {
+	background-color: #B7B7CE;
+}
+
+.fire {
+	background-color: #f7a86c;
+}
+
+.grass {
+	background-color: #a6e980;
+}
+
+.electric {
+	background-color: #f8dd72;
+}
+
+.water {
+	background-color: #84a9f8;
+}
+
+.ice {
+    background-color: #96D9D6;
+}
+
+.ground {
+	background-color: #ecca72;
+}
+
+.rock {
+	background-color: #d3c063;
+}
+
+.fairy {
+	background-color: #fcb8da;
+}
+
+.poison {
+	background-color: #cc86cb;
+}
+
+.bug {
+	background-color: #c3d157;
+}
+
+.dragon {
+	background-color: #a17ff7;
+}
+
+.psychic {
+	background-color: #fa84a7;
+}
+
+.flying {
+	background-color: #a9aef0;
+}
+
+.fighting {
+	background-color: #f58b88;
+}
+
+.ghost {
+    background-color: #9d7fc5;
+}
+
+.dark {
+    background-color: #8d7565;
+}
+
+.normal {
+	background-color: #cecda6;
+}
+
+.card-number {
+	background-color: #fff;
+	opacity: .9;
+	border-radius: 5px;
+	color: rgb(105, 105, 107);
+	position: relative;
+	margin-top: 15px	;
+	margin-bottom: 5px;
+	font-weight: lighter;
+	z-index: 2;
+	cursor:default;
+}
+
+.card-number:hover{
+	color: rgba(0,0,0,0.5);
+}
+
+.card-title {
+    background-color: #fff;
+	opacity: .9;
+	color: rgb(74, 74, 75);
+    padding-left: 10px;
+    padding-right: 10px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+    border-radius: 7px;
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-size: 28px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+	cursor:default;
+}
+
+.card-title:hover{
+	color: rgba(0,0,0,0.5);
+}
+
+.card-subtitle {
+    background-color: #fff;
+	opacity: .9;	
+    border-radius: 7px;
+    padding: 5px;
+	margin-top: 5px;
+	color: rgb(105, 105, 107);
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+	cursor:default;
+}
+
+.card-subtitle:hover {
+	color: rgba(0,0,0,0.5);
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 5px;
+}
+
+.card-image:hover	 {
+	animation: shake 0.5s linear;
+}
+
+@keyframes shake {
+	20% {
+		transform: rotate(3deg);
+	}
+
+	40% {
+		transform: rotate(0deg);
+	}
+
+	60% {
+		transform: rotate(-3deg);
+	}
+
+	80% {
+		transform: rotate(-0deg);
+	}
+
+	90% {
+		transform: rotate(1deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
